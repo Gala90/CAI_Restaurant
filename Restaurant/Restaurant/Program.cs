@@ -7,27 +7,25 @@ using System.Threading.Tasks;
 namespace Restaurant
 {
 
-    public class Restaurant : Attribute
+  public class Program
     {
-        public String nombre;
-        public String direccion;
-        public String telefono;
-        public int cantMesas;
-        public string[] mesas;
-        public string[] menu;
-
-        public Restaurant (string nombre, string telefono, string direccion, int cantMesas)
+        static void Main(string[] args)
         {
-            this.nombre = nombre;
-            this.direccion =  direccion;
-            this.telefono = telefono;
-            this.cantMesas = cantMesas;
+            Restaurant miRestaurant = new Restaurant("La farola", "41234567", "Calle Falsa 123", 5);
+            
+            miRestaurant.mostrarRestaurant();
 
+            string comida;
 
+            /*
+            Console.WriteLine("Que plato quiere agregar al menu? ");
+            comida = Console.ReadLine();
+            miRestaurant.agregarComida(comida);
+
+            */
+
+            Console.ReadKey();
         }
-
-
-
     }
-  
+
 }
