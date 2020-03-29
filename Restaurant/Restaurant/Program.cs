@@ -11,13 +11,21 @@ namespace Restaurant
     {
         static void Main(string[] args)
         {
-            Restaurant miRestaurant = new Restaurant("La farola", "41234567", "Calle Falsa 123", 5);
+            Restaurant miRestaurant = new Restaurant("La farola", "41234567", "Calle Falsa 123", 2);
             
             miRestaurant.mostrarRestaurant();
 
-            string comida;
+            miRestaurant.mesasDisponibles();
+
+            miRestaurant.reservarMesa();            
+
+            miRestaurant.reservarMesa();
+
+            miRestaurant.reservarMesa();
+
 
             /*
+              string comida;
             Console.WriteLine("Que plato quiere agregar al menu? ");
             comida = Console.ReadLine();
             miRestaurant.agregarComida(comida);
