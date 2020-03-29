@@ -96,7 +96,7 @@ namespace Restaurant
         
         public void mostrarMenu()
         {
-            if (menu == null)
+            if (menu.Count == 0)
             {
                 Console.WriteLine("Menu Vacio");
             } else { 
