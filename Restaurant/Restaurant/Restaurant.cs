@@ -12,9 +12,9 @@ namespace Restaurant
             private String direccion;
             private String telefono;
             private int cantMesas;
-            private int[] mesas;
-            private List<String> menu;
             private int mesasLibres;
+            private List<String> menu;
+            
 
 
         public Restaurant(string nombre, string telefono, string direccion, int cantMesas)
@@ -24,6 +24,8 @@ namespace Restaurant
                 this.direccion = direccion;
                 this.cantMesas = cantMesas;
                 this.mesasLibres = cantMesas;
+                menu = new List<string>();
+
 
 
         }
@@ -54,14 +56,7 @@ namespace Restaurant
             set { this.direccion = value; }
            }
 
-        public String MenuRestaurant
-        {
-            get
-            {
-                return this.direccion;
-            }
-            set { this.direccion = value; }
-        }
+
 
         public void mostrarRestaurant() {
 
@@ -89,23 +84,33 @@ namespace Restaurant
 
         }
 
-        /*
+        
+        
         public void agregarComida (string comida)
             {
             menu.Add(comida);                         
             }
 
+       
+
         
         public void mostrarMenu()
         {
-            foreach (string comida in menu)
+            if (menu == null)
             {
-                Console.WriteLine(comida);
+                Console.WriteLine("Menu Vacio");
+            } else { 
+
+            foreach (string value in menu)
+            {
+                Console.WriteLine(value);
             }
+            }
+
         }
             
+       
 
 
-    */
     }
 }

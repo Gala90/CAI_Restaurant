@@ -23,14 +23,27 @@ namespace Restaurant
 
             miRestaurant.reservarMesa();
 
+            miRestaurant.mostrarMenu();
 
-            /*
-              string comida;
+
+            
+
+            string comida;
             Console.WriteLine("Que plato quiere agregar al menu? ");
             comida = Console.ReadLine();
             miRestaurant.agregarComida(comida);
 
-            */
+            miRestaurant.mostrarMenu();
+
+            Console.WriteLine("Que plato quiere agregar al menu? ");
+            comida = Console.ReadLine();
+            miRestaurant.agregarComida(comida);
+
+
+            miRestaurant.mostrarMenu();
+
+
+
 
             Console.ReadKey();
         }
